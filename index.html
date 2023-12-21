@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="Assets/Lambang-ITS.png" alt="Logo" class="logo" width="70px" height="70px" />
+      <div class="nav-container">
+        <ul class="nav-items">
+          <li>Home</li>
+          <li>Profil</li>
+          <li>Jurusan</li>
+          <li>Message Us</li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <h1>HI There, <span id="nama-orang">Guest</span></h1>
+      <p>Terima kasih telah mengunjungi website ini</p>
+    </section>
+    <div class="containers">
+      <div class="slideshow-container">
+        <div class="Containers ContainersImage">
+          <img src="Assets/grahaits.jpg" />
+          <div class="Info" style="color: white">grahaits</div>
+        </div>
+        <div class="Containers">
+          <img src="Assets/ilustrasi-its.jpeg" />
+          <div class="Info" style="color: white">ITS</div>
+        </div>
+        <div class="Containers">
+          <img src="Assets/download.jpg" />
+          <div class="Info" style="color: white">rektorat</div>
+        </div>
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="facilitations">
+      <div>
+        <div class="cicle" style="background-image: url('Assets/informatika.png')"></div>
+        <h4>Gedung Infromatika</h4>
+      </div>
+      <div>
+        <div class="cicle" style="background-image: url('Assets/Robotika-3.jpg')"></div>
+        <h4>Gedung Robotika</h4>
+      </div>
+      <div>
+        <div class="cicle" style="background-image: url('Assets/sciencee.jpg')"></div>
+        <h4>Research Center</h4>
+      </div>
+    </div>
+    <div class="messageUs">
+      <div>
+        <h2>Message Us</h2>
+        <label for="name">Nama :</label>
+        <input type="text" id="name" name="name" placeholder="nama" size="33" /><br />
+        <label for="birthdate">Tanggal Lahir :</label>
+        <input type="date" id="birthdate" name="birthdate" /><br />
+        <label for="gender">Jenis Kelamin :</label>
+        <input type="radio" id="laki" name="gender" value="Laki Laki" class="gender" />
+        <label for="laki">Laki Laki</label>
+        <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender" />
+        <label for="perempuan">Perempuan</label><br />
+        <div class="pesan">Pesan : <textarea id="message" name="message" placeholder="pesan"></textarea><br /></div>
+        <div class="buttons">
+          <button id="submit" class="submit" onclick="getAll()">Submit</button>
+          <button id="reset" class="reset" onclick="resetAll()">Reset</button>
+        </div>
+      </div>
+      <div id="showResult">
+        <strong class="result">Current Time : </strong> <span id="waktu"></span> <br /><br />
+        <strong class="result">Nama : </strong> <span id="nama"></span> <br /><br />
+        <strong class="result">Tanggal Lahir : </strong> <span id="lahir"></span> <br /><br />
+        <strong class="result">Jenis Kelamin : </strong> <span id="kelamin"></span> <br /><br />
+        <strong class="result">Pesan : </strong> <span id="pesan"></span> <br /><br />
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>RevoU 2023</p>
+      </div>
+    </footer>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
